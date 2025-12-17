@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import { useContext, useState } from "react";
-import { ThemeContext } from "../Context/ThemeContext";
+import { ThemeContext } from "../../Context/ThemeContext";
 import "./Header.css";
 
 export default function Header() {
