@@ -16,7 +16,7 @@ export default function Header() {
       <nav className={menuOpen ? "nav open" : "nav"}>
         <Link to="/" id="home">Home</Link>
         <Link to="/products" id="products">Products</Link>
-        <a href="#" id="prev-orders">Previous Orders</a>
+        <Link to="/previous-orders" id="prev-orders">Previous Orders</Link>
       </nav>
 
       <div className="actions">
