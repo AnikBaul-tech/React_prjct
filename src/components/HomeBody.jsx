@@ -47,21 +47,10 @@ const HomeBody = () => {
       <section className="best-sellers">
         <h2>Best Sellers</h2>
         <div className="product-grid">
-          <div className="product-card">Product 1</div>
-          <div className="product-card">Product 2</div>
-          <div className="product-card">Product 3</div>
-          <div className="product-card">Product 4</div>
-        </div>
-      </section>
-
-      {/* VALUES */}
-      <section className="values">
-        <h2>What We Stand For</h2>
-        <div className="values-grid">
-          <div className="value-card">Premium Fabrics</div>
-          <div className="value-card">Sustainable Materials</div>
-          <div className="value-card">Made in India</div>
-          <div className="value-card">Easy Returns</div>
+          <div className="product-card"><p>Product 1</p></div>
+          <div className="product-card"><p>Product 2</p></div>
+          <div className="product-card"><p>Product 3</p></div>
+          <div className="product-card"><p>Product 4</p></div>
         </div>
       </section>
 

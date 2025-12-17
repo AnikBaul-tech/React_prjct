@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import { useContext, useState } from "react";
 import { ThemeContext } from "../Context/ThemeContext";
 import "./Header.css";
@@ -13,8 +14,8 @@ export default function Header() {
       <div className="brand">AnikBrand</div>
 
       <nav className={menuOpen ? "nav open" : "nav"}>
-        <a href="#" id="home">Home</a>
-        <a href="#" id="products">Products</a>
+        <Link to="/" id="home">Home</Link>
+        <Link to="/products" id="products">Products</Link>
         <a href="#" id="prev-orders">Previous Orders</a>
       </nav>
 

@@ -9,7 +9,8 @@
   --accent-light: #7a74e9;
   --accent-green: rgb(82, 181, 82);
   --accent-violet: rgb(204, 129, 204);
-  --accent-two: rgb(82, 46, 188);
+  --accent-two-light: rgb(112, 85, 192);
+  
 }
 
 * {
@@ -30,6 +31,7 @@ html,body {
   --card: #f7f7f7;
   --card-hover: #eaeaea;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --accent-two: rgb(103, 75, 186);
 }
 
 .dark {
@@ -38,6 +40,7 @@ html,body {
   --card: #1a1a1a;
   --card-hover: #222;
   --shadow: 0 4px 12px rgba(255, 255, 255, 0.06);
+  --accent-two: rgb(63, 37, 141);
 }
 
 body, .light, .dark {

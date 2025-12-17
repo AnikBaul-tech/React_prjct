@@ -6,7 +6,7 @@
   padding: 20px 24px;
   background: var(--bg-light);
   color: var(--text-light);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow);
   transition: background 0.3s, color 0.3s;
 }
 

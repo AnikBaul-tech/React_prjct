@@ -59,6 +59,9 @@
   gap: 20px;
 }
 /* COLLECTIONS */
+.story-content h2{
+  color: wheat;
+}
 .collections {
   padding: 60px 40px;
   text-align: center;
@@ -67,7 +70,7 @@
   gap: 20px;
   box-shadow: var(--shadow);
 }
-.collections h2,.story-content h2{
+.collections h2, .best-sellers h2{
   color: var(--accent-violet);
 }
 .collection-grid{
@@ -100,6 +103,7 @@
 .collection-card:hover{
   border: 1px solid rgba(255,255,255,0.3);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .collection-grid #street{
@@ -124,12 +128,15 @@
 /* BRAND STORY */
 .brand-story {
   padding: 60px 40px;
-  background: var(--brand-bg);
+  background: var(--accent-two);
   color: var(--brand-text);
   text-align: center;
   box-shadow: var(--shadow);
+  transition: 1s;
 }
-
+.brand-story:hover{
+  background: var(--accent-two-light);
+}
 .brand-story .story-content{
   display: flex;
   flex-direction: column;
@@ -139,10 +146,41 @@
 }
 
 /* BEST SELLERS */
+.best-sellers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+.product-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .product-card {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   background: var(--card);
   padding: 30px;
   border-radius: 10px;
+}
+
+.product-card:hover{
+  border: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.product-card p{
+  padding: 6px;
+  background: white;
+  color: var(--accent);
 }
 
 /* VALUES */
