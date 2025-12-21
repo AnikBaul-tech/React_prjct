@@ -10,7 +10,6 @@
   --accent-green: rgb(82, 181, 82);
   --accent-violet: rgb(204, 129, 204);
   --accent-two-light: rgb(112, 85, 192);
-  
 }
 
 * {
@@ -30,7 +29,8 @@ html,body {
   --text: #111;
   --card: #f7f7f7;
   --card-hover: #eaeaea;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow: 0 4px 12px rgba(20, 19, 19, 0.633);
+  --shadow-hover: 1px solid rgba(0, 0, 0, 0.3);
   --accent-two: rgb(103, 75, 186);
 }
 
@@ -40,6 +40,7 @@ html,body {
   --card: #1a1a1a;
   --card-hover: #222;
   --shadow: 0 4px 12px rgba(255, 255, 255, 0.06);
+  --shadow-hover: 1px solid rgba(255,255,255,0.3);
   --accent-two: rgb(63, 37, 141);
 }
 
@@ -63,4 +64,21 @@ body, .light, .dark {
     background-color: var(--accent-light);
     transform: scale(1.1);
     cursor: pointer;
+}
+.search-box-container{
+  height: 60px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-box{
+  height: 50px;
+  width: 400px;
+  min-width: 350px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid var(--text);
+  color: var(--text);
+  background: transparent;
+  font-size: 15px;
 }

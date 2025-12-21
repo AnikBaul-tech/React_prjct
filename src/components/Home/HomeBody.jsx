@@ -1,17 +1,14 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../Context/ThemeContext";
 import "./HomeBody.css";
 
 const HomeBody = () => {
-  const { theme } = useContext(ThemeContext); // "light" or "dark"
 
   return (
-    <div className={`home-body ${theme}`}>
+    <div className={`home-body`}>
 
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Wear Your Story</h1>
+          <text>Wear Your Story</text>
           <p>Minimal. Modern. Made for movement.</p>
           <div className="hero-buttons">
             <button className="button">Shop Men</button>

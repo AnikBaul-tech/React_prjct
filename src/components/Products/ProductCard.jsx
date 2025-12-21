@@ -6,8 +6,15 @@ const ProductCard = ({ item }) => {
       <div className="product-img">
         <img src={item.img} alt={item.title} />
       </div>
-      <h3 className="product-title">{item.title}</h3>
-      <p className="product-price">{item.price}</p>
+      <div className="product-card-details">
+        <text className="product-title">{item.title}</text>
+        <div className="product-card-bottom">
+          <button className="button" id="order-btn">Order</button>
+          <button className="button" id="like-btn">Like</button>
+        </div>
+          <p className="product-price">{item.price}</p>
+        
+      </div>
     </div>
   );
 };

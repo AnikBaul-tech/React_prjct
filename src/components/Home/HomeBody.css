@@ -20,9 +20,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+  background: url("https://images.pexels.com/photos/459486/pexels-photo-459486.jpeg")
     center/cover no-repeat;
-  filter: blur(12px);
   transform: scale(1.1); /* prevents edge clipping */
   z-index: 1;
 }
@@ -52,6 +51,11 @@
   font-weight: 600;
   background-color: rgb(231, 224, 224);
   color: var(--accent);
+}
+
+.hero-content text{
+  font-size: 50px;
+  border: 4px solid var(--shadow);
 }
 
 .hero-buttons{
@@ -160,27 +164,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-.product-card {
-  height: 300px;
-  width: 500px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background: var(--card);
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.product-card:hover{
-  border: 1px solid rgba(255,255,255,0.3);
-  cursor: pointer;
-}
-
-.product-card p{
-  padding: 6px;
-  background: white;
-  color: var(--accent);
 }
 
 /* VALUES */

@@ -21,6 +21,11 @@
   color: var(--accent);
 }
 
+.active-link {
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 2px;
+}
+
 .nav {
   display: flex;
   gap: 24px;

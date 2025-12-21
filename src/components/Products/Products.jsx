@@ -1,8 +1,9 @@
 import React from "react";
-import { useContext,useState } from "react";
-import { ThemeContext } from "../../Context/ThemeContext";
+import { useState } from "react";
 import "./Products.css";
 import ProductCard from "./ProductCard";
+import SearchComponent from "../Functionalities/SearchProductCards";
+import Snowfall from 'react-snowfall'
 
 const productsData = [
   {
@@ -23,6 +24,18 @@ const productsData = [
     price: "$49.99",
     img: "https://plus.unsplash.com/premium_photo-1681912767618-b78349675d1d?q=80&w=1187&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
+  {
+    id: 4,
+    title: "Lehenga",
+    price: "$49.99",
+    img: "https://images.pexels.com/photos/13661843/pexels-photo-13661843.jpeg",
+  },
+  {
+    id: 5,
+    title: "Kurti",
+    price: "$49.99",
+    img: "https://images.pexels.com/photos/28390563/pexels-photo-28390563.jpeg",
+  },
 ];
 
 
@@ -30,9 +43,9 @@ const filters = ["All", "T-Shirts", "Hoodies", "Bottoms", "Accessories"];
 
 const Products = () => {
   const [activeFilter, setActiveFilter] = useState("All");
-  const { theme } = useContext(ThemeContext);
   return (
-    <section className={`products-section ${theme}`}>
+    <section className={`products-section`}>
+      <Snowfall color="rgba(125, 160, 149, 1)"/>
       <div className="products-header">
         <h2>Our Products</h2>
         <p>Premium essentials crafted for comfort and identity.</p>
@@ -58,11 +71,13 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="products-grid">
+      <SearchComponent items={productsData}/>
+
+      {/* <div className="products-grid">
         {productsData.map((item) => (
-          <ProductCard item={item} />
+          <ProductCard item={item} key={item.id}/>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
