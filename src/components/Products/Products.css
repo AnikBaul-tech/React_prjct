@@ -122,6 +122,10 @@
   color: var(--accent);
 }
 
+.company-name{
+  color: var(--text);
+}
+
 .product-img {
   height: 100%;
   width: 100%;

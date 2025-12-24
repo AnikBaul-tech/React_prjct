@@ -7,13 +7,13 @@ const ProductCard = ({ item }) => {
         <img src={item.img} alt={item.title} />
       </div>
       <div className="product-card-details">
-        <text className="product-title">{item.title}</text>
+        <span className="product-title">{item.title}</span>
+        <span className="company-name">{item.coName}</span>
         <div className="product-card-bottom">
           <button className="button" id="order-btn">Order</button>
           <button className="button" id="like-btn">Like</button>
         </div>
           <p className="product-price">{item.price}</p>
-        
       </div>
     </div>
   );
